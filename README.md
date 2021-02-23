@@ -1,4 +1,4 @@
-💰 enzona-pay-library
+💰 EnzonaPay
 =======
 Android implementation of Enzona XETID-DT-VC. Restricted and specific use case.
 
