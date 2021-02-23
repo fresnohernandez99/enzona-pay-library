@@ -1,10 +1,10 @@
-💰 EnzonaPay
+💰 enzona-pay-library
 =======
 Android implementation of Enzona XETID-DT-VC. Restricted and specific use case.
 
 **WARNING: Confirm Payment step use a real balance.**
 
-[![JitPack](https://jitpack.io/v/jdsdhp/enzonapay.svg)](https://jitpack.io/#jdsdhp/enzonapay) 
+[![JitPack](https://jitpack.io/v/jdsdhp/enzona-pay-library.svg)](https://jitpack.io/#jdsdhp/enzona-pay-library) 
 [![API](https://img.shields.io/badge/API-19%2B-red.svg?style=flat)](https://android-arsenal.com/api?level=17) 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Twitter](https://img.shields.io/badge/Twitter-@jdsdhp-9C27B0.svg)](https://twitter.com/jdsdhp)
@@ -31,7 +31,7 @@ allprojects  {
 Add the dependency.
 ```gradle
 dependencies {
-    implementation 'com.github.jdsdhp:enzonapay:$version'
+    implementation 'com.github.jdsdhp:enzona-pay-library:$version'
 }
 ```
 ## Usage
