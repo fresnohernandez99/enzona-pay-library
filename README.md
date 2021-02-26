@@ -78,6 +78,8 @@ supportFragmentManager.addFragmentOnAttachListener { _, fragment ->
     }
 }
 ```
+#### Complete the Payment
+When the payment has been confirmed, the `PayCompleteResponse` object must be used to complete the payment using the Rest API. The request will return a `PayCompleteResponseWrapper` with the details and current status.
 
 License
 =======

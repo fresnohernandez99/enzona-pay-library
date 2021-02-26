@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 jesusd0897.
+ * Copyright (c) 2021 jesusd0897.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,7 +27,7 @@ android {
         minSdkVersion 17
         targetSdkVersion 30
         versionCode 1
-        versionName "0.1.0"
+        versionName "0.1.1"
         multiDexEnabled true
         vectorDrawables.useSupportLibrary true
         consumerProguardFiles "consumer-rules.pro"
