@@ -20,6 +20,8 @@ import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
 
+const val EXTRA_PAY_ITEM_TAG = "extra_item_pay"
+
 @Parcelize
 data class Info(
     @SerializedName("success") val isSuccess: Boolean,

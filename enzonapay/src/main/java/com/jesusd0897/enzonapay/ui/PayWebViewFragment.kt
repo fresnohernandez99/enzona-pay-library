@@ -21,19 +21,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.jesusd0897.enzonapay.EXTRA_PAY_ITEM_TAG
 import com.jesusd0897.enzonapay.PayCreateResponse
 import com.jesusd0897.enzonapay.databinding.FragmentWebviewBinding
 import com.jesusd0897.enzonapay.webview.PaymentViewClient
-
-const val EXTRA_PAY_ITEM_TAG = "extra_item_pay"
-
-interface WebViewLoadListener {
-    fun onLoading(createResponse: PayCreateResponse)
-    fun onLoadFinish(createResponse: PayCreateResponse)
-    fun onError(createResponse: PayCreateResponse, code: Int?, message: String?)
-    fun onPaymentCanceled(createResponse: PayCreateResponse)
-    fun onPaymentConfirmed(createResponse: PayCreateResponse)
-}
 
 class PayWebViewFragment : Fragment() {
 

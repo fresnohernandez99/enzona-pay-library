@@ -22,7 +22,7 @@ import android.os.Build
 import android.webkit.*
 import androidx.annotation.RequiresApi
 
-internal class PaymentViewClient(
+class PaymentViewClient(
     private val returnUrl: String,
     private val cancelUrl: String,
     val returnAction: (url: String?) -> Unit,

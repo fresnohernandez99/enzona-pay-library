@@ -12,9 +12,16 @@ Android implementation of Enzona XETID-DT-VC. Restricted and specific use case.
 ## Screenshots
 Sample library project to test the payment platform.
 
-Create Payment | Authenticate with Enzona | Confirm Payment
+The first step is **create the payment**.
+Create Payment | Payment Created
 :-:|:-:|:-:
-![](art/art-01.jpg) | ![](art/art-02.jpg) | ![](art/art-03.jpg)
+![](art/art-01.jpg) | ![](art/art-02.jpg)
+
+A WebView should be use to **confirm the payment** through ENZONA web interface.
+
+Authenticate with Enzona | Confirm Payment
+:-:|:-:|:-:
+![](art/art-03.jpg) | ![](art/art-04.jpg)
 
 ## Including in your project
 
@@ -78,7 +85,22 @@ supportFragmentManager.addFragmentOnAttachListener { _, fragment ->
     }
 }
 ```
-#### Complete the Payment
+### Using BottomSheetDialog
+![](art/art-05.jpg)
+
+The library can be using through a `PayBottomSheetDialog` implementation. 
+The`WebViewLoadListener` also works as explained above.
+```kotlin
+PayBottomSheetDialog(
+    context = this,
+    createResponse = payCreateResponse,
+    title = "Dialog Title",
+    subtitle = "Dialog Subtitle",
+    shouldUseHeader = true,
+).show()
+```
+
+### Complete the Payment
 When the payment has been confirmed, the `PayCompleteResponse` object must be used to complete the payment using the Rest API. The request will return a `PayCompleteResponseWrapper` with the details and current status.
 
 License
