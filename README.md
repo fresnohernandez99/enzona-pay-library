@@ -14,13 +14,13 @@ Sample library project to test the payment platform.
 
 The first step is **create the payment**.
 Create Payment | Payment Created
-:-:|:-:|:-:
+:-:|:-:
 ![](art/art-01.jpg) | ![](art/art-02.jpg)
 
 A WebView should be use to **confirm the payment** through ENZONA web interface.
 
 Authenticate with Enzona | Confirm Payment
-:-:|:-:|:-:
+:-:|:-:
 ![](art/art-03.jpg) | ![](art/art-04.jpg)
 
 ## Including in your project
